@@ -2,12 +2,14 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>POCDOC</title>
+	<title>Ross Rambotics Scouting</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/b5dbcb3331.js" crossorigin="anonymous"></script>
 	<style>
+
+		
 		*{
 			margin: 0;
 			padding: 0;
@@ -16,16 +18,17 @@
 		.header{
 			min-height: 100vh;
 			width: 100%;
-			background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(reCalendog.png);
 			background-position: center;
 			background-size: cover;
 			position: relative;
+      			background-color: black;
 		}
 		nav{
 			display: flex;
 			padding: 2% 6%;
 			justify-content: space-between;
 			align-items: center;
+			background-color: #0d0d0d;
 		}
 		nav img{
 			width: 150px;
@@ -140,37 +143,22 @@
 </head>
 <body>
 	<section class="header">
+
 		<nav>
-			<a href="classic.html" class="logo-link">*logoalt</a>
+			<a href="classic.html" class="logo-link"><img src="logo.png"></a>
 			<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="moveMenuOut()"></i>
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="input.html">SEARCH</a></li>
-					<li><a href="leaderboard.html">APPOINTMENTS</a></li>
-					<li><a href="tracker.html">FAMILY</a></li>
+					<li><a href="input.html">SCOUTING</a></li>
+					<li><a href="leaderboard.html">LEADERBOARD</a></li>
+					<li><a href="tracker.html">TRACKER</a></li>
+					<li><a href="wip.html">WIP</a></li>
 				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<iframe width="100%" height="1000" src="https://script.google.com/macros/s/AKfycbyUPEd2eC1goDEgHR-YNQ1aM7ymlRsjX0IZNs92Q1Uvyez6In8apbJu4FnWU7uLgbcIfQ/exec"></iframe>	
 	</section>
-	<script>
-		var navLinks = document.getElementById("navLinks");
-
-		function showMenu(){
-			navLinks.style.display = "block";
-			setTimeout(moveMenuIn, 10);
-		}
-
-		function moveMenuIn(){
-			navLinks.style.right = "0";
-		}
-
-		function moveMenuOut(){
-			navLinks.style.right = "-200px";
-			setTimeout(hideMenu, 1000);
-		}
-
-		function hideMenu(){
-			navLinks.style.display = "none";
-		}
-	</script>
 </body>
 </html>
